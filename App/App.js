@@ -55,11 +55,11 @@ export default function App() {
           .map((item) => {                     
             console.log(item);
             return (
-              <View key={item.id} >
-                <Text style={{ fontSize: '20px' , color:'#000000', fontWeight:'bold' }}>
+              <View key={item.id} style={{backgroundColor: '#ff99dd', marginTop: '50px', width:'200px'}} >
+                <Text style={{ fontSize: '20px' , color:'#000000', fontWeight:'bold', left:'30px' }}>
                   name :{item.name}
                   </Text>
-                  <Text style={{ fontSize: '20px' , color:'#000000', fontWeight:'bold' }}>
+                  <Text style={{ fontSize: '20px' , color:'#000000', fontWeight:'bold',left:'30px' }}>
                   id :{item.id}</Text>
                 <Image
                   source={item.img}
