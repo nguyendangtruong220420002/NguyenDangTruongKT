@@ -17,25 +17,7 @@ export default function App() {
   useEffect(() => {
     fetchData();
   }, []);
-  const Post = () => {
-    fetch(url,
-      {
-        method: 'POST',
-        boby: JSON.stringify({
-          name: "Ronaldo",
-          img: "https://media.bongda.com.vn/files/thach.pham/2022/11/05/r-0819.jpg"
-        }),
-        headers: {
-          'Accept': 'application/json',
-          'Content-type': "application/json; charset:UTF-8",
-        },
-      })
-      .then((Res) => Res.json())
-      .then((json => {
-        setData([...data, json]);
-        console.log(json);
-      }))
-  };
+  
   return (
     <View style={styles.container}>
       {
